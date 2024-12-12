@@ -1,0 +1,94 @@
+.contact {
+  height: 32px;
+}
+
+.contact span{
+  font-size: 14px;
+}
+
+/* --------------header-------------------- */
+
+.header-container {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-search-container {
+  height: 36px;
+  width: 35%;
+}
+
+.search-btn {
+  border: none;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item span {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.drop-menu {
+  background-color: #25982B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+}
+
+.drop-menu:hover {
+  background-color: #25982B;
+  opacity: 0.8;
+}
+
+/* thanh điều hướng */
+.navigation {
+  min-height: 60px;
+  padding: 8px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-container a {
+  cursor: pointer;
+}
+
+.nav-container a span {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sp-container {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
