@@ -364,3 +364,39 @@
   font-weight: 700;
   line-height: 40px;
 }
+
+.legit-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legit-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.legit-title span{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.legit-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legit-item-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
