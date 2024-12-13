@@ -284,3 +284,43 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+/* danh mục sản phẩm */
+.category-container {
+  margin-top: 40px;
+}
+
+.list-category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.list-category-header span {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.list-category-header .more-btn {
+  display: flex;
+  text-decoration: none;
+  color: #25982B;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-item span{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -11,6 +11,10 @@ body {
   background-color: #25982B;
 }
 
+.color-green {
+  color: #25982B;;
+}
+
 .content-center {
   display: flex;
   align-items: center;
