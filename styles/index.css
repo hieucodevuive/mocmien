@@ -250,3 +250,37 @@
 .recommend-img-container {
   width: 40%;
 }
+
+/* chính sách */
+.delivary-container {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-around;
+  background-color: #F5F6F9;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.delivary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.delivary-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivary-title-container .text-1 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.delivary-title-container .text-2 {
+  font-size: 16px;
+  line-height: 20px;
+}
