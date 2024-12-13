@@ -36,7 +36,7 @@
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   cursor: pointer;
   text-decoration: none;
   color: black;
@@ -56,8 +56,23 @@
   border: none;
 }
 
+.drop-menu-2 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: black;
+  border: none;
+}
+
+.drop-menu-2:hover {
+  background-color: white;
+  color: black;
+}
+
 .drop-menu:hover {
-  background-color: #25982B;
+  background-color: #425843;
   opacity: 0.8;
 }
 
@@ -92,3 +107,143 @@
   gap: 8px;
 }
 
+/* slider */
+.banner-slider {
+  max-width: 1280px;
+  margin-top: 40px;
+}
+
+
+/* quảng cáo */
+.recommend-container {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.recommend-intro {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.intro-text {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.intro-title {
+  color: #25982B;
+}
+
+.intro-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25982B;
+  width: 240px;
+  height: 44px;
+  border-radius: 16px;
+  margin-top: 32px;
+}
+
+.intro-btn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.special-product {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 12px;
+}
+
+.sp-title {
+  color: black;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  border-bottom: 1px solid #CBCBCB;
+  padding-bottom: 12px;
+}
+
+.sp-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #CBCBCB;
+  padding-bottom: 12px;
+}
+
+.sp-first {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sp-first {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.review-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.produce-video {
+  border-radius: 30px; /* Góc bo tròn */
+}
+
+.review-view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.review {
+  text-align: end;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2%;
+  color: #6B6B6B;
+}
+
+.review-text-1 {
+  font-size: 14px;
+  line-height: 17.57px;
+  color: #2F2F2F;
+}
+
+.review-text-2 {
+  font-size: 14px;
+  line-height: 17.57px;
+  color: #9F9F9F;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.video-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.recommend-img-container {
+  width: 40%;
+}
