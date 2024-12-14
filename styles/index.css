@@ -410,3 +410,94 @@
   font-size: 20px;
   line-height: 32px;
 }
+
+/* bán chạy */
+
+.bestsell-list-container {
+  justify-content: center
+}
+
+.bestsell-product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 264px;
+  padding: 8px;
+}
+
+.bestsell-product-image {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.combo-tag {
+  background-color: #002351;
+}
+
+.new-tag {
+  background-color: #FE2D05;
+}
+
+.bestsell-product-title span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Số dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.bestsell-product-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bestsell-product-current-price {
+  color: #25982B;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.bestsell-product-old-price {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #949494;
+}
+
+.bestsell-product-selling {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bestsell-product-selling span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #686868;
+}
