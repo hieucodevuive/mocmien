@@ -500,3 +500,37 @@
   line-height: 20px;
   color: #686868;
 }
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  font-size: 24px; /* Kích thước ngôi sao */
+  color: #ccc; /* Màu ngôi sao chưa chọn */
+  position: relative;
+}
+
+.star-rating .star {
+  color: #ccc; /* Màu sao chưa chọn */
+}
+
+.star-rating .star.filled {
+  color: #ffd700; /* Màu vàng cho sao đầy */
+}
+
+.star-rating .star.half {
+  position: relative;
+  color: #ccc; /* Nền sao trống */
+}
+
+.star-rating .star.half::before {
+  content: '★'; /* Hiển thị sao */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffd700; /* Màu vàng cho nửa sao */
+  width: 100%; /* Phần nửa sao */
+  height: 100%;
+  overflow: hidden;
+  clip-path: inset(0 50% 0 0); /* Chỉ hiển thị nửa trái */
+}
+
