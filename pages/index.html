@@ -47,7 +47,7 @@
           <img src="../assets/images/card-icon.png" alt="">
           <span>Giỏ hàng</span>
         </a>
-        <div class="dropdown">
+        <div class="dropdown nav-item">
           <button class="btn btn-secondary drop-menu-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="../assets/images/user-icon.png" alt="">
             <span>Tài khoản</span>
@@ -55,12 +55,12 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item nav-item" href="#">
+              <a class="dropdown-item " href="#">
                 <span>Thông tin tài khoản</span>
               </a>
             </li>
             <li>
-              <a class="dropdown-item nav-item" href="#">
+              <a class="dropdown-item" href="#">
                 <span>Đăng xuất</span>
               </a> 
         </div>
@@ -163,21 +163,27 @@
             <img src="../assets/images/sp1.png" alt="btn">
             <span>Sữa rửa mặt mướp đắng</span>
           </div>
-          <img src="../assets/images/btn-ar.png" alt="btn">
+          <div class='sp-first-btn'>
+            <img src="../assets/images/btn-ar.png" alt="btn">
+          </div>
         </div>
         <div class='sp-container'>
           <div class='sp-first'>
             <img src="../assets/images/sp2.png" alt="btn">
             <span>Dầu tẩy trang</span>
           </div>
-          <img src="../assets/images/btn-ar.png" alt="btn">
+          <div class='sp-first-btn'>
+            <img src="../assets/images/btn-ar.png" alt="btn">
+          </div>
         </div>
-        <div class='sp-container'>
+        <div class='sp-container mb-4'>
           <div class='sp-first'>
             <img src="../assets/images/sp3.png" alt="btn">
             <span>Cao mướp đắng trị mụn</span>
           </div>
-          <img src="../assets/images/btn-ar.png" alt="btn">
+          <div class='sp-first-btn'>
+            <img src="../assets/images/btn-ar.png" alt="btn">
+          </div>
         </div>
       </div>
     </div>
@@ -306,7 +312,7 @@
 
       <!-- câu chuyện -->
       <div class='container story-container flex-lg-row flex-column gap-4 gap-lg-0 align-items-lg-start'>
-      <div>
+      <div class='ceo-img'>
         <img src="../assets/images/ceo.png" alt="ceo">
       </div>
       <div class='story-content'>
@@ -566,7 +572,33 @@
                 <div class="star half">★</div>
                 <div class="star">★</div>
               </div>
-              <div>
+              <div class='product-tym'>
+                <img src="../assets/images/tym.png" alt="tym">
+              </div>
+            </div>
+          </div>
+          <!-- product cart -->
+          <div class="col bestsell-product-container">
+            <div class='bestsell-product-image'>
+              <img src="../assets/images/product1.png" alt="">
+            </div>
+            
+            <div class='bestsell-product-title'>
+              <span>COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa rửa mặt mướp đắng</span>
+            </div>
+            <div class='bestsell-product-price-container'>
+              <div class='bestsell-product-current-price'>329,000đ</div>
+              <div class='bestsell-product-old-price'>579,000đ</div>
+            </div>
+            <div class='bestsell-product-selling'>
+              <div class="star-rating">
+                <div class="star filled">★</div>
+                <div class="star filled">★</div>
+                <div class="star filled">★</div>
+                <div class="star half">★</div>
+                <div class="star">★</div>
+              </div>
+              <div class='product-tym'>
                 <img src="../assets/images/tym.png" alt="">
               </div>
             </div>
@@ -592,7 +624,7 @@
                 <div class="star half">★</div>
                 <div class="star">★</div>
               </div>
-              <div>
+              <div class='product-tym'>
                 <img src="../assets/images/tym.png" alt="">
               </div>
             </div>
@@ -618,7 +650,7 @@
                 <div class="star half">★</div>
                 <div class="star">★</div>
               </div>
-              <div>
+              <div class='product-tym'>
                 <img src="../assets/images/tym.png" alt="">
               </div>
             </div>
@@ -644,33 +676,7 @@
                 <div class="star half">★</div>
                 <div class="star">★</div>
               </div>
-              <div>
-                <img src="../assets/images/tym.png" alt="">
-              </div>
-            </div>
-          </div>
-          <!-- product cart -->
-          <div class="col bestsell-product-container">
-            <div class='bestsell-product-image'>
-              <img src="../assets/images/product1.png" alt="">
-            </div>
-            
-            <div class='bestsell-product-title'>
-              <span>COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa rửa mặt mướp đắng</span>
-            </div>
-            <div class='bestsell-product-price-container'>
-              <div class='bestsell-product-current-price'>329,000đ</div>
-              <div class='bestsell-product-old-price'>579,000đ</div>
-            </div>
-            <div class='bestsell-product-selling'>
-              <div class="star-rating">
-                <div class="star filled">★</div>
-                <div class="star filled">★</div>
-                <div class="star filled">★</div>
-                <div class="star half">★</div>
-                <div class="star">★</div>
-              </div>
-              <div>
+              <div class='product-tym'>
                 <img src="../assets/images/tym.png" alt="">
               </div>
             </div>
@@ -703,9 +709,9 @@
             </div>
           </div>
           <a class='d-flex text-decoration-none align-items-center'>
-            <div class='color-green'>Xem tất cả</div>
+            <div class='color-green btn-more-collection'>Xem tất cả</div>
             <div>
-              <img src="../assets/images/arr.png" alt="">
+              <img src="../assets/images/arr.png" alt="xem thêm">
             </div>
           </a>
         </div>
@@ -1191,10 +1197,10 @@
               <span>Theo dõi đơn hàng</span>
               <span>Hướng dẫn mua hàng Online</span>
               <div class='d-flex gap-2'>
-                <a href=""><img src="../assets/images/insta.png" alt="insta"></a>
-                <a href=""><img src="../assets/images/fb.png" alt="fb"></a>
-                <a href=""><img src="../assets/images/linkedin.png" alt="linkedin"></a>
-                <a href=""><img src="../assets/images/yt.png" alt="youtube"></a>
+                <a href="" class='social-icon'><img src="../assets/images/insta.png" alt="insta"></a>
+                <a href="" class='social-icon'><img src="../assets/images/fb.png" alt="fb"></a>
+                <a href="" class='social-icon'><img src="../assets/images/linkedin.png" alt="linkedin"></a>
+                <a href="" class='social-icon'><img src="../assets/images/yt.png" alt="youtube"></a>
               </div>
             </div>
           </div>

@@ -26,6 +26,11 @@
   border: none;
 }
 
+.search-btn:hover {
+  background-color: #25982B;
+  opacity: 0.8;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -40,6 +45,22 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  position: relative;
+}
+
+.header-nav .nav-item::before {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Đặt gạch chân ở dưới */
+  left: 0;
+  width: 0; /* Bắt đầu từ 0 */
+  height: 2px; /* Độ dày của gạch chân */
+  background-color: #25982B; /* Màu của gạch chân */
+  transition: width 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.nav-item:hover::before {
+  width: 100%; /* Khi hover, gạch chân kéo dài hết chiều rộng */
 }
 
 .nav-item span {
@@ -93,6 +114,10 @@
   cursor: pointer;
 }
 
+.nav-container a:hover {
+  opacity: 0.8;
+}
+
 .nav-container a span {
   color: white;
   font-size: 16px;
@@ -123,10 +148,18 @@
 }
 
 .recommend-intro {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng mượt */
   max-width: 30%;
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+.recommend-intro.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
 }
 
 .intro-text {
@@ -148,6 +181,11 @@
   height: 44px;
   border-radius: 16px;
   margin-top: 32px;
+  cursor: pointer;
+}
+
+.intro-btn:hover {
+  opacity: .8;
 }
 
 .intro-btn a{
@@ -188,6 +226,16 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
+}
+
+.sp-first-btn {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sp-first-btn:hover {
+  transform: scale(1.2);
 }
 
 .sp-first {
@@ -196,10 +244,18 @@
 }
 
 .review-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng mượt */
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.review-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
 }
 
 .produce-video {
@@ -248,7 +304,15 @@
 }
 
 .recommend-img-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng mượt */
   width: 40%;
+}
+
+.recommend-img-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
 }
 
 /* chính sách */
@@ -310,6 +374,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  opacity: 0.7;
 }
 
 .category-item {
@@ -317,6 +386,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .category-item-img {
@@ -327,6 +397,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.category-item-img:hover {
+  transform: scale(1.1);
 }
 
 .category-item span{
@@ -335,13 +410,47 @@
   line-height: 20px;
 }
 
+.ceo-img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+}
+
+.ceo-img img{
+  width: 100%;
+}
+
+.category-item span:hover{
+  color: #25982B;
+}
+
+@media (min-width: 992px) {
+  
+.ceo-img {
+  width: 1000px;
+  }
+}
+
+
 .story-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
   margin-top: 40px;
   display: flex;
   align-items: center;
 }
 
+.story-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
+
 .story-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,9 +484,17 @@
 }
 
 .legit-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
+}
+
+.legit-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
 }
 
 .legit-title {
@@ -432,6 +549,12 @@
   justify-content: center;
   border-radius: 16px;
   overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.bestsell-product-image:hover {
+  transform: scale(1.05);
 }
 
 .tag-container {
@@ -466,6 +589,11 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.bestsell-product-title span:hover {
+  color: #25982B;
 }
 
 .bestsell-product-price-container {
@@ -626,6 +754,11 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.collection-frist-des h5:hover {
+  color: #25982B;
 }
 
 .collection-frist-price span{
@@ -645,6 +778,23 @@
 
 .collection-mid-img img {
   width: 100%;
+}
+
+.btn-more-collection {
+  cursor: pointer;
+}
+
+.btn-more-collection:hover {
+  opacity: 0.7;
+}
+
+.product-tym {
+  transition: 0.3 ease;
+  cursor: pointer;
+}
+
+.product-tym:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 992px) {
@@ -675,6 +825,12 @@
   justify-content: center;
   border-radius: 24px;
   overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.event-img:hover {
+  transform: scale(1.05);
 }
 
 .event-img img {
@@ -698,7 +854,13 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
+
+.event-content h3:hover {
+  color: #25982B;
+}
+
 
 .event-content span {
   color: #777777;
@@ -793,6 +955,12 @@
   justify-content: center;
   border-radius: 24px;
   overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.news-items-img:hover {
+  transform: scale(1.05);
 }
 
 .news-items {
@@ -815,8 +983,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
+.news-items h3:hover {
+  color: #25982B;
+}
 
 .news-items span {
   color: #777777;
@@ -868,4 +1040,12 @@
   line-height: 40px;
   font-weight: 700;
   margin-top: 40px;
+}
+
+.social-icon img{
+  transition: 0.4s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
 }

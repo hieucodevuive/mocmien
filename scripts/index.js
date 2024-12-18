@@ -64,3 +64,88 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// hiệu ứng đẹp
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.querySelector(".recommend-intro");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        target.classList.add("visible");
+      }
+    });
+  });
+
+  observer.observe(target);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imgContainer = document.querySelector(".recommend-img-container");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        imgContainer.classList.add("visible");
+      }
+    });
+  });
+
+  observer.observe(imgContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reviewContainer = document.querySelector(".review-container");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        reviewContainer.classList.add("visible");
+      }
+    });
+  });
+
+  observer.observe(reviewContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const storyContainer = document.querySelector(".story-container");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        storyContainer.classList.add("visible");
+      }
+    });
+  });
+
+  observer.observe(storyContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const legitContainer = document.querySelector(".legit-container");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        legitContainer.classList.add("visible");
+      }
+    });
+  });
+
+  observer.observe(legitContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.container-hint');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
