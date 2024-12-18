@@ -665,6 +665,87 @@
   }
 }
 
-@media (min-width: 768px) {
-  
+/* Sự kiện sắp tới */
+
+.event-img {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.event-img img {
+  width: 100%;
+}
+
+.event-content {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-content h3 {
+  color: #000000;
+  font-style: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Số dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-content span {
+  color: #777777;
+  font-style: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-container .carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.custom-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10; /* Đảm bảo nút hiển thị phía trên carousel */
+}
+
+.custom-prev,
+.custom-next {
+  color: #fff; /* Màu chữ */
+  border: none;
+  border-radius: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 8px;
+}
+
+.custom-prev {
+  transform: rotate(180deg);
+}
+
+.custom-prev:hover{
+  transform:  rotate(180deg) scale(1.2);
+}
+
+.custom-next:hover {
+  transform: scale(1.2);
 }

@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Costom slider cho sư kiện
+function prevSlide() {
+  const carousel = document.querySelector('#carouselExampleIndicators'); // ID của carousel
+  const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+  carouselInstance.prev(); // Di chuyển về slide trước
+}
+
+function nextSlide() {
+  const carousel = document.querySelector('#carouselExampleIndicators');
+  const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+  carouselInstance.next(); // Di chuyển đến slide tiếp theo
+}
