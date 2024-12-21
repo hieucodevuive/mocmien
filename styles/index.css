@@ -134,8 +134,16 @@
 
 /* slider */
 .banner-slider {
-  max-width: 1280px;
   margin-top: 40px;
+}
+
+.slider-img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 
@@ -166,6 +174,7 @@
   font-size: 52px;
   font-weight: 600;
   line-height: 60px;
+  white-space: nowrap
 }
 
 .intro-title {
@@ -317,11 +326,30 @@
 
 /* chính sách */
 .delivary-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng mượt */
   display: flex;
   min-height: 120px;
   align-items: center;
   padding: 12px;
-  justify-content: space-around;
+  justify-content: flex-start;
+  background-color: #F5F6F9;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.delivary-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
+
+.delivary-container-2 {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  padding: 12px;
+  justify-content: flex-start;
   background-color: #F5F6F9;
   flex-wrap: wrap;
   gap: 12px;
@@ -351,7 +379,15 @@
 
 /* danh mục sản phẩm */
 .category-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng mượt */
   margin-top: 40px;
+}
+
+.category-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
 }
 
 .list-category-header {
@@ -390,14 +426,15 @@
 }
 
 .category-item-img {
-  width: 113px;
-  height: 103px;
-  border-radius: 200px;
+  width: 400px;
+  height: 150px;
+  border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transition: 0.4s ease;
+  margin-bottom: 24px;
 }
 
 .category-item-img:hover {
@@ -405,9 +442,9 @@
 }
 
 .category-item span{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .ceo-img {
@@ -477,6 +514,12 @@
   line-height: 28px;
 }
 
+.story-content .text-style-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .story-content span {
   font-size: 32px;
   font-weight: 700;
@@ -528,6 +571,17 @@
 }
 
 /* bán chạy */
+
+.bestsell-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.bestsell-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
 
 .bestsell-list-container {
   justify-content: center
@@ -662,7 +716,40 @@
   clip-path: inset(0 50% 0 0); /* Chỉ hiển thị nửa trái */
 }
 
+.instruction-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.instruction-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
+
 /* Bộ sưu tập mới */
+
+.new-collection-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.new-collection-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
+
+.container-combo {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.container-combo.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
 
 .new-collection-title {
   display: flex;
@@ -816,6 +903,16 @@
 }
 
 /* Sự kiện sắp tới */
+.event-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.event-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
 
 .event-img {
   width: 100%;
@@ -827,6 +924,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: 0.4s ease;
+  margin-bottom: 24px;
 }
 
 .event-img:hover {
@@ -914,6 +1012,16 @@
 
 
 /* tin tức từ mộc miên */
+.new-section-container {
+  opacity: 0; /* Ẩn ban đầu */
+  transform: translateY(50px); /* Dịch xuống dưới */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.new-section-container.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
 
 .news-nav-container {
   display: flex;
@@ -957,6 +1065,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: 0.4s ease;
+  margin-bottom: 24px;
 }
 
 .news-items-img:hover {
@@ -1048,4 +1157,22 @@
 
 .social-icon img:hover {
   transform: scale(1.1);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

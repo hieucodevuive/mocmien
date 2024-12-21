@@ -149,3 +149,117 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(guideContainer);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.delivary-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.category-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.bestsell-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.instruction-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.container-combo');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.new-collection-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.event-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const guideContainer = document.querySelector('.new-section-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        guideContainer.classList.add('visible');
+      }
+    });
+  });
+
+  observer.observe(guideContainer);
+});
+
+		
