@@ -2,7 +2,7 @@
   height: 32px;
 }
 
-.contact span{
+.contact span {
   font-size: 14px;
 }
 
@@ -10,7 +10,7 @@
 
 .header-container {
   height: 100px;
-  width: 100%;
+  /* width: 100%; */
   background-color: white;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .search-btn:hover {
-  background-color: #25982B;
+  background-color: #25982b;
   opacity: 0.8;
 }
 
@@ -49,13 +49,13 @@
 }
 
 .header-nav .nav-item::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px; /* Đặt gạch chân ở dưới */
   left: 0;
   width: 0; /* Bắt đầu từ 0 */
   height: 2px; /* Độ dày của gạch chân */
-  background-color: #25982B; /* Màu của gạch chân */
+  background-color: #25982b; /* Màu của gạch chân */
   transition: width 0.3s ease; /* Hiệu ứng mượt */
 }
 
@@ -69,7 +69,7 @@
 }
 
 .drop-menu {
-  background-color: #25982B;
+  background-color: #25982b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,6 @@
   border-radius: 24px;
 }
 
-
 /* quảng cáo */
 .recommend-container {
   display: flex;
@@ -174,18 +173,18 @@
   font-size: 52px;
   font-weight: 600;
   line-height: 60px;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .intro-title {
-  color: #25982B;
+  color: #25982b;
 }
 
 .intro-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #25982B;
+  background-color: #25982b;
   width: 240px;
   height: 44px;
   border-radius: 16px;
@@ -194,10 +193,10 @@
 }
 
 .intro-btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
-.intro-btn a{
+.intro-btn a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -217,14 +216,14 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  border-bottom: 1px solid #CBCBCB;
+  border-bottom: 1px solid #cbcbcb;
   padding-bottom: 12px;
 }
 
 .sp-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #CBCBCB;
+  border-bottom: 1px solid #cbcbcb;
   padding-bottom: 12px;
   text-decoration: none;
   align-items: center;
@@ -283,19 +282,19 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 2%;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 
 .review-text-1 {
   font-size: 14px;
   line-height: 17.57px;
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 
 .review-text-2 {
   font-size: 14px;
   line-height: 17.57px;
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .video-container {
@@ -334,7 +333,7 @@
   align-items: center;
   padding: 12px;
   justify-content: flex-start;
-  background-color: #F5F6F9;
+  background-color: #f5f6f9;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -350,7 +349,7 @@
   align-items: center;
   padding: 12px;
   justify-content: flex-start;
-  background-color: #F5F6F9;
+  background-color: #f5f6f9;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -406,7 +405,7 @@
 .list-category-header .more-btn {
   display: flex;
   text-decoration: none;
-  color: #25982B;
+  color: #25982b;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -441,7 +440,7 @@
   transform: scale(1.1);
 }
 
-.category-item span{
+.category-item span {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -456,21 +455,19 @@
   border-radius: 24px;
 }
 
-.ceo-img img{
+.ceo-img img {
   width: 100%;
 }
 
-.category-item span:hover{
-  color: #25982B;
+.category-item span:hover {
+  color: #25982b;
 }
 
 @media (min-width: 992px) {
-  
-.ceo-img {
-  width: 1000px;
+  .ceo-img {
+    width: 1000px;
   }
 }
-
 
 .story-container {
   opacity: 0; /* Ẩn ban đầu */
@@ -492,7 +489,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px
+  gap: 24px;
 }
 
 .graph-containe {
@@ -546,7 +543,7 @@
   margin-bottom: 40px;
 }
 
-.legit-title span{
+.legit-title span {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -584,7 +581,7 @@
 }
 
 .bestsell-list-container {
-  justify-content: center
+  justify-content: center;
 }
 
 .bestsell-product-container {
@@ -631,7 +628,7 @@
 }
 
 .new-tag {
-  background-color: #FE2D05;
+  background-color: #fe2d05;
 }
 
 .bestsell-product-title span {
@@ -647,7 +644,7 @@
 }
 
 .bestsell-product-title span:hover {
-  color: #25982B;
+  color: #25982b;
 }
 
 .bestsell-product-price-container {
@@ -657,7 +654,7 @@
 }
 
 .bestsell-product-current-price {
-  color: #25982B;
+  color: #25982b;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -705,7 +702,7 @@
 }
 
 .star-rating .star.half::before {
-  content: '★'; /* Hiển thị sao */
+  content: "★"; /* Hiển thị sao */
   position: absolute;
   left: 0;
   top: 0;
@@ -776,7 +773,7 @@
 .collection-nav-container {
   display: flex;
   align-items: center;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-radius: 24px;
   height: 36px;
   gap: 24px;
@@ -798,11 +795,11 @@
 }
 
 .collection-nav-item.active {
-  background-color: #25982B;
+  background-color: #25982b;
 }
 
-.collection-nav-item.active span{
-  color: #FFFFFF;
+.collection-nav-item.active span {
+  color: #ffffff;
 }
 
 .collection-frist-container {
@@ -845,10 +842,10 @@
 }
 
 .collection-frist-des h5:hover {
-  color: #25982B;
+  color: #25982b;
 }
 
-.collection-frist-price span{
+.collection-frist-price span {
   font-size: 16px;
   line-height: 24px;
 }
@@ -956,9 +953,8 @@
 }
 
 .event-content h3:hover {
-  color: #25982B;
+  color: #25982b;
 }
-
 
 .event-content span {
   color: #777777;
@@ -1002,14 +998,13 @@
   transform: rotate(180deg);
 }
 
-.custom-prev:hover{
-  transform:  rotate(180deg) scale(1.2);
+.custom-prev:hover {
+  transform: rotate(180deg) scale(1.2);
 }
 
 .custom-next:hover {
   transform: scale(1.2);
 }
-
 
 /* tin tức từ mộc miên */
 .new-section-container {
@@ -1026,7 +1021,7 @@
 .news-nav-container {
   display: flex;
   align-items: center;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-radius: 24px;
   height: 36px;
   gap: 24px;
@@ -1048,11 +1043,11 @@
 }
 
 .news-nav-item.active {
-  background-color: #25982B;
+  background-color: #25982b;
 }
 
-.news-nav-item.active span{
-  color: #FFFFFF;
+.news-nav-item.active span {
+  color: #ffffff;
 }
 
 .news-items-img {
@@ -1078,11 +1073,11 @@
   gap: 12px;
 }
 
-.news-items-img img{
+.news-items-img img {
   width: 100%;
 }
 
-.news-items h3{
+.news-items h3 {
   color: #000000;
   font-style: 18px;
   line-height: 24px;
@@ -1096,7 +1091,7 @@
 }
 
 .news-items h3:hover {
-  color: #25982B;
+  color: #25982b;
 }
 
 .news-items span {
@@ -1113,7 +1108,7 @@
 /* footer */
 .footer-container {
   width: 100%;
-  background-color: #F5F6F9;
+  background-color: #f5f6f9;
 }
 
 .footer-frist-container {
@@ -1151,7 +1146,7 @@
   margin-top: 40px;
 }
 
-.social-icon img{
+.social-icon img {
   transition: 0.4s ease;
 }
 
