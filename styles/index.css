@@ -1171,3 +1171,122 @@
   display: block;
   width: 100%;
 }
+
+/* ------------------------------------------TRANG DANH MỤC----------------------------------------------*/
+/* địa chỉ trang hiện tại */
+.location-page {
+  height: 60px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.location-page span {
+  font-size: 18px;
+  line-height: 32px;
+  color: #64748b;
+}
+
+.location-page .current-page {
+  color: #002351;
+  font-weight: 700;
+}
+
+.list-btn {
+  width: 300px;
+  max-width: 300px;
+  padding-right: 20px;
+  border-radius: 12px;
+  background-color: #fbfbfb;
+  border: 1px solid #e8e8e8;
+}
+
+.list-btn:hover {
+  background-color: #25982b;
+  border: 1px white solid;
+}
+
+.list-btn:hover span {
+  color: white;
+}
+
+.list-btn:active {
+  background-color: #25982b;
+  color: white;
+  border: 1px white solid;
+}
+
+.list-btn:focus-visible {
+  background-color: #25982b;
+  color: white;
+  border: 1px white solid;
+}
+
+.list-btn::after {
+  display: none;
+}
+
+.list-btn span {
+  color: #bababa;
+}
+
+.down-arr {
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+/* Nav */
+.category-nav-item {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #949494;
+  border: 1px solid transparent; /* Viền mặc định là trong suốt */
+  transition: color 0.3s ease, border 0.3s ease, font-weight 0.3s ease;
+  font-weight: 600;
+}
+
+.category-nav-item:hover {
+  color: #25982b;
+}
+
+.category-nav-item.active {
+  border: 1px solid #25982b; /* Chỉ đổi màu viền */
+  color: #25982b;
+}
+
+/* pagination */
+.page-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #f1f5f9;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
+.page-number:hover {
+  transform: scale(1.05);
+}
+
+.page-number.active {
+  background-color: #000000;
+}
+
+.page-number.active span {
+  color: white;
+}
+
+.page-number span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
