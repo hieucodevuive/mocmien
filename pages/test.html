@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-lg p-8 bg-white rounded-lg shadow-md">
+      <h2 class="mb-6 text-xl font-semibold">Thông tin khách mua hàng</h2>
+      <div class="mb-4">
+        <label class="block mb-2 text-gray-700" for="name">Họ và tên</label>
+        <input
+          class="w-full p-2 border border-gray-300 rounded"
+          type="text"
+          id="name"
+          value="Đặng Quỳnh Trang"
+          readonly
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 text-gray-700" for="phone"
+          >Số điện thoại</label
+        >
+        <input
+          class="w-full p-2 border border-gray-300 rounded"
+          type="text"
+          id="phone"
+          value="0123 456 789"
+          readonly
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 text-gray-700" for="address"
+          >Địa chỉ giao hàng</label
+        >
+        <input
+          class="w-full p-2 border border-gray-300 rounded"
+          type="text"
+          id="address"
+          value="Quán Toan, Hồng Bàng, Hải Phòng"
+          readonly
+        />
+      </div>
+      <div class="mb-6">
+        <label class="block mb-2 text-gray-700" for="note"
+          >Ghi chú giao hàng</label
+        >
+        <input
+          class="w-full p-2 border border-gray-300 rounded"
+          type="text"
+          id="note"
+          value="Gọi trước khi giao hàng"
+          readonly
+        />
+      </div>
+      <h2 class="mb-4 text-xl font-semibold">Hình thức vận chuyển</h2>
+      <div class="mb-4">
+        <label class="flex items-center">
+          <input
+            type="radio"
+            name="shipping"
+            class="text-green-500 form-radio"
+            checked
+          />
+          <span class="ml-2">GIAO NHANH: NHẬN HÀNG TỪ 2-5 NGÀY (35.000đ)</span>
+        </label>
+      </div>
+      <div class="mb-6">
+        <label class="flex items-center">
+          <input
+            type="radio"
+            name="shipping"
+            class="text-green-500 form-radio"
+          />
+          <span class="ml-2"
+            >GIAO CHẬM: NHẬN HÀNG TỪ TRÊN 7 NGÀY (15.000đ)</span
+          >
+        </label>
+      </div>
+      <h2 class="mb-4 text-xl font-semibold">Hình thức thanh toán</h2>
+      <div class="mb-4">
+        <label class="flex items-center">
+          <input
+            type="radio"
+            name="payment"
+            class="text-green-500 form-radio"
+            checked
+          />
+          <span class="ml-2">Thanh toán tiền mặt khi nhận hàng (COD)</span>
+        </label>
+      </div>
+      <div class="mb-6">
+        <label class="flex items-center">
+          <input
+            type="radio"
+            name="payment"
+            class="text-green-500 form-radio"
+          />
+          <span class="ml-2"
+            >[Miễn phí thanh toán] Chuyển khoản qua ngân hàng (VietQR)</span
+          >
+        </label>
+      </div>
+      <div class="flex items-center justify-between mb-6">
+        <span class="text-lg font-semibold">Tổng tiền</span>
+        <span class="text-lg font-semibold text-green-500">635.000đ</span>
+      </div>
+      <button
+        class="w-full py-3 text-lg font-semibold text-white bg-green-500 rounded-lg"
+      >
+        HOÀN TẤT ĐẶT HÀNG NGAY
+      </button>
+    </div>
+  </body>
+</html>

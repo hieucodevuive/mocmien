@@ -350,3 +350,71 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize by showing 'Thông tin sản phẩm' content by default
   changeContent("info");
 });
+
+//Xử lý các bước đặt hàng
+document.addEventListener("DOMContentLoaded", () => {
+  let currentStep = 1; // Bước hiện tại
+  const steps = document.querySelectorAll(".step");
+  const stepContents = document.querySelectorAll(".step-content");
+  const nextButton = document.getElementById("next-step");
+  // const prevButton = document.getElementById("prev-step");
+
+  function updateUI() {
+    // Cập nhật trạng thái hiển thị cho các bước
+    steps.forEach((step) => {
+      const stepNumber = parseInt(step.getAttribute("data-step"));
+      const icon = step.querySelector(".icon");
+
+      // Cập nhật trạng thái cho bước đã hoàn thành
+      if (stepNumber < currentStep) {
+        step.classList.add("completed");
+        step.classList.remove("active");
+        icon.classList.add("text-white", "bg-blue-900");
+        icon.classList.remove("bg-gray-200", "text-gray-500");
+      }
+      // Cập nhật trạng thái cho bước hiện tại
+      else if (stepNumber === currentStep) {
+        step.classList.add("active");
+        step.classList.remove("completed");
+        icon.classList.add("text-white", "bg-blue-900");
+        icon.classList.remove("bg-gray-200", "text-gray-500");
+      }
+      // Cập nhật trạng thái cho bước chưa hoàn thành
+      else {
+        step.classList.remove("active", "completed");
+        icon.classList.add("bg-gray-200", "text-gray-500");
+        icon.classList.remove("text-white", "bg-blue-900");
+      }
+    });
+
+    // Hiển thị nội dung tương ứng với bước hiện tại
+    stepContents.forEach((content) => {
+      const stepNumber = parseInt(content.getAttribute("data-step"));
+      content.classList.toggle("active", stepNumber === currentStep);
+    });
+
+    // Ẩn/Hiện nút điều hướng
+    // prevButton.style.display = currentStep === 1 ? "none" : "inline-block";
+    // nextButton.textContent =
+    //   currentStep === steps.length ? "Hoàn tất" : "Tiếp tục";
+  }
+
+  nextButton.addEventListener("click", () => {
+    if (currentStep < steps.length) {
+      currentStep++;
+      updateUI();
+    } else {
+      alert("Đặt hàng thành công!");
+    }
+  });
+
+  // prevButton.addEventListener("click", () => {
+  //   if (currentStep > 1) {
+  //     currentStep--;
+  //     updateUI();
+  //   }
+  // });
+
+  // Cập nhật giao diện ban đầu
+  updateUI();
+});
