@@ -215,7 +215,7 @@
     </div>
 
     <!-- Step Contents -->
-    <div class="flex justify-center mt-6">
+    <div class="flex justify-center my-6">
       <div class="step-content" data-step="1">
         <div class="max-w-4xl">
           <div class="flex items-center space-x-4">
@@ -259,28 +259,31 @@
             <p class="text-lg font-semibold">Tổng tiền</p>
             <p class="text-lg font-semibold text-green-600">600.000đ</p>
           </div>
-          <button
-            id="next-step"
-            class="w-full py-3 mt-4 text-lg font-semibold text-white bg-green-600 rounded-full"
-          >
-            ĐẶT HÀNG NGAY
-          </button>
+          <div class="flex justify-center mt-4">
+            <button
+              id="next-step"
+              class="px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            >
+              ĐẶT HÀNG NGAY
+            </button>
+          </div>
         </div>
       </div>
       <div class="hidden step-content" data-step="2">
-        <div class="w-full max-w-4xl p-8 bg-white rounded-lg shadow-md">
-          <h2 class="mb-6 text-xl font-semibold">Thông tin khách mua hàng</h2>
-          <div class="mb-4">
+        <div class="grid max-w-4xl sm:grid-cols-2 gap-x-8 gap-y-4">
+          <h2 class="text-xl font-semibold sm:col-span-2">
+            Thông tin khách mua hàng
+          </h2>
+          <div class="sm:col-span-1">
             <label class="block mb-2 text-gray-700" for="name">Họ và tên</label>
             <input
               class="w-full p-2 border border-gray-300 rounded"
               type="text"
               id="name"
               value="Đặng Quỳnh Trang"
-              readonly
             />
           </div>
-          <div class="mb-4">
+          <div class="sm:col-span-1">
             <label class="block mb-2 text-gray-700" for="phone"
               >Số điện thoại</label
             >
@@ -289,10 +292,9 @@
               type="text"
               id="phone"
               value="0123 456 789"
-              readonly
             />
           </div>
-          <div class="mb-4">
+          <div class="col-span-2">
             <label class="block mb-2 text-gray-700" for="address"
               >Địa chỉ giao hàng</label
             >
@@ -301,10 +303,9 @@
               type="text"
               id="address"
               value="Quán Toan, Hồng Bàng, Hải Phòng"
-              readonly
             />
           </div>
-          <div class="mb-6">
+          <div class="col-span-2">
             <label class="block mb-2 text-gray-700" for="note"
               >Ghi chú giao hàng</label
             >
@@ -313,11 +314,10 @@
               type="text"
               id="note"
               value="Gọi trước khi giao hàng"
-              readonly
             />
           </div>
-          <h2 class="mb-4 text-xl font-semibold">Hình thức vận chuyển</h2>
-          <div class="mb-4">
+          <h2 class="col-span-2 text-xl font-semibold">Hình thức vận chuyển</h2>
+          <div class="col-span-2">
             <label class="flex items-center">
               <input
                 type="radio"
@@ -330,7 +330,7 @@
               >
             </label>
           </div>
-          <div class="mb-6">
+          <div class="col-span-2">
             <label class="flex items-center">
               <input
                 type="radio"
@@ -342,8 +342,8 @@
               >
             </label>
           </div>
-          <h2 class="mb-4 text-xl font-semibold">Hình thức thanh toán</h2>
-          <div class="mb-4">
+          <h2 class="col-span-2 text-xl font-semibold">Hình thức thanh toán</h2>
+          <div class="col-span-2">
             <label class="flex items-center">
               <input
                 type="radio"
@@ -354,7 +354,7 @@
               <span class="ml-2">Thanh toán tiền mặt khi nhận hàng (COD)</span>
             </label>
           </div>
-          <div class="mb-6">
+          <div class="col-span-2">
             <label class="flex items-center">
               <input
                 type="radio"
@@ -366,38 +366,281 @@
               >
             </label>
           </div>
-          <div class="flex items-center justify-between mb-6">
+          <hr class="col-span-2" />
+          <div class="flex items-center justify-between col-span-2">
             <span class="text-lg font-semibold">Tổng tiền</span>
             <span class="text-lg font-semibold text-green-500">635.000đ</span>
           </div>
-          <button
-            class="w-full py-3 text-lg font-semibold text-white bg-green-500 rounded-lg"
-          >
-            HOÀN TẤT ĐẶT HÀNG NGAY
-          </button>
+          <div class="flex justify-center col-span-2 mt-4">
+            <button
+              id="next-step"
+              class="px-4 py-2 text-white bg-green-500 rounded-full btn-submit-form hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            >
+              HOÀN TẤT ĐẶT HÀNG NGAY
+            </button>
+          </div>
         </div>
       </div>
       <div class="hidden step-content" data-step="3">
-        <h2 class="text-lg font-semibold">Hoàn tất</h2>
-        <p>Đơn hàng của bạn đã được đặt thành công!</p>
+        <div class="max-w-4xl text-center">
+          <img
+            alt="Shopping cart with gift boxes"
+            class="mx-auto mb-4 w-[360px]"
+            src="../assets/images/imageComplete.png"
+          />
+          <h1 class="mb-2 text-xl font-semibold">
+            Bạn đã đặt hàng
+            <span class="text-green-500"> thành công </span>
+          </h1>
+          <p class="mb-4 text-gray-700">
+            Đơn hàng của bạn đã đặt thành công. Bạn có thể kiểm tra tình trạng
+            đơn hàng
+            <a class="text-green-500" href="#"> TẠI ĐÂY </a>
+            , hoặc vào phần TÀI KHOẢN của bạn -&gt; Đơn hàng của tôi
+          </p>
+          <button
+            class="px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+          >
+            TIẾP TỤC MUA HÀNG
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- Navigation Buttons -->
-    <!-- <div class="flex justify-center mt-4">
-      <button
-        id="prev-step"
-        class="px-4 py-2 mr-2 text-white bg-gray-500 rounded"
-      >
-        Quay lại
-      </button>
-      <button id="next-step" class="px-4 py-2 text-white bg-blue-900 rounded">
-        Tiếp tục
-      </button>
-    </div> -->
+    <!-- sản phẩm bán chạy -->
+    <div class="mt-5 bestsell-container">
+      <div class="mx-mobile md:mx-6 lg:mx-16 xl:mx-28 list-category-header">
+        <span>SẢN PHẨM <span class="color-green">MỚi</span></span>
+        <a class="more-btn">
+          <div class="">Xem thêm</div>
+          <img src="../assets/images/arr.png" alt="" />
+        </a>
+      </div>
+      <div class="row bestsell-list-container">
+        <!-- product cart -->
+        <div class="col bestsell-product-container">
+          <div class="bestsell-product-image">
+            <img src="../assets/images/product1.png" alt="" />
+          </div>
+          <div class="gap-2 d-flex">
+            <div class="tag-container combo-tag">
+              <span>COMBO</span>
+            </div>
+            <div class="tag-container new-tag">
+              <span>NEW</span>
+            </div>
+          </div>
+          <div class="bestsell-product-title">
+            <span
+              >COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa
+              rửa mặt mướp đắng</span
+            >
+          </div>
+          <div class="bestsell-product-price-container">
+            <div class="bestsell-product-current-price">329,000đ</div>
+            <div class="bestsell-product-old-price">579,000đ</div>
+          </div>
+          <div class="bestsell-product-selling">
+            <span>3,7k đã bán</span>
+            <div>
+              <img src="../assets/images/tym.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- product cart -->
+        <div class="col bestsell-product-container">
+          <div class="bestsell-product-image">
+            <img src="../assets/images/product1.png" alt="" />
+          </div>
+          <div class="gap-2 d-flex">
+            <div class="tag-container combo-tag">
+              <span>COMBO</span>
+            </div>
+            <div class="tag-container new-tag">
+              <span>NEW</span>
+            </div>
+          </div>
+          <div class="bestsell-product-title">
+            <span
+              >COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa
+              rửa mặt mướp đắng</span
+            >
+          </div>
+          <div class="bestsell-product-price-container">
+            <div class="bestsell-product-current-price">329,000đ</div>
+            <div class="bestsell-product-old-price">579,000đ</div>
+          </div>
+          <div class="bestsell-product-selling">
+            <span>3,7k đã bán</span>
+            <div>
+              <img src="../assets/images/tym.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- product cart -->
+        <div class="col bestsell-product-container">
+          <div class="bestsell-product-image">
+            <img src="../assets/images/product1.png" alt="" />
+          </div>
+          <div class="gap-2 d-flex">
+            <div class="tag-container combo-tag">
+              <span>COMBO</span>
+            </div>
+            <div class="tag-container new-tag">
+              <span>NEW</span>
+            </div>
+          </div>
+          <div class="bestsell-product-title">
+            <span
+              >COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa
+              rửa mặt mướp đắng</span
+            >
+          </div>
+          <div class="bestsell-product-price-container">
+            <div class="bestsell-product-current-price">329,000đ</div>
+            <div class="bestsell-product-old-price">579,000đ</div>
+          </div>
+          <div class="bestsell-product-selling">
+            <span>3,7k đã bán</span>
+            <div>
+              <img src="../assets/images/tym.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- product cart -->
+        <div class="col bestsell-product-container">
+          <div class="bestsell-product-image">
+            <img src="../assets/images/product1.png" alt="" />
+          </div>
+          <div class="gap-2 d-flex">
+            <div class="tag-container combo-tag">
+              <span>COMBO</span>
+            </div>
+            <div class="tag-container new-tag">
+              <span>NEW</span>
+            </div>
+          </div>
+          <div class="bestsell-product-title">
+            <span
+              >COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa
+              rửa mặt mướp đắng</span
+            >
+          </div>
+          <div class="bestsell-product-price-container">
+            <div class="bestsell-product-current-price">329,000đ</div>
+            <div class="bestsell-product-old-price">579,000đ</div>
+          </div>
+          <div class="bestsell-product-selling">
+            <span>3,7k đã bán</span>
+            <div>
+              <img src="../assets/images/tym.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- product cart -->
+        <div class="col bestsell-product-container">
+          <div class="bestsell-product-image">
+            <img src="../assets/images/product1.png" alt="" />
+          </div>
+          <div class="gap-2 d-flex">
+            <div class="tag-container combo-tag">
+              <span>COMBO</span>
+            </div>
+            <div class="tag-container new-tag">
+              <span>NEW</span>
+            </div>
+          </div>
+          <div class="bestsell-product-title">
+            <span
+              >COMBO x2 đặc trị mụn - Cao mướp đắng khổ qua, bột mướp đắng, sữa
+              rửa mặt mướp đắng</span
+            >
+          </div>
+          <div class="bestsell-product-price-container">
+            <div class="bestsell-product-current-price">329,000đ</div>
+            <div class="bestsell-product-old-price">579,000đ</div>
+          </div>
+          <div class="bestsell-product-selling">
+            <span>3,7k đã bán</span>
+            <div>
+              <img src="../assets/images/tym.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="mt-5 footer-container">
+      <div class="px-4 pt-5 pb-5 mx-mobile md:mx-6 lg:mx-16 xl:mx-28">
+        <div class="row">
+          <div
+            class="col-lg-3 col-12 footer-frist-container d-flex flex-column"
+          >
+            <div class="gap-3 d-flex align-items-center">
+              <div><img src="../assets/images/logo.png" alt="logo" /></div>
+            </div>
+            <div class="mt-4 mb-3 bestnew-info">
+              <div class="gap-3 bn-contacts">
+                <div class="bn-contact">
+                  <span>123 Main Street, Hometown, USA</span>
+                </div>
+                <div class="bn-contact">
+                  <span>minhtuanvinhomes@gmail.com</span>
+                </div>
+                <div class="bn-contact">
+                  <span>084.936.8668</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gap-3 text-white col-lg-3 col-6 d-flex flex-column footer-mid"
+          >
+            <h2>VỀ MỘC MIÊN</h2>
+            <span>Câu truyện thương hiệu</span>
+            <span>Về chúng tôi</span>
+            <span>Liên hệ</span>
+          </div>
+          <div
+            class="gap-3 text-white col-lg-3 col-6 d-flex flex-column footer-mid"
+          >
+            <h2>CHÍNH SÁCH</h2>
+            <span>Chính sách và quy định chung</span>
+            <span>Chính sách và giao nhận thanh toán</span>
+            <span>Chính sách đổi trả</span>
+            <span>Điều khoản sử dụng</span>
+          </div>
+          <div
+            class="gap-3 text-white col-lg-3 col-6 d-flex flex-column footer-mid"
+          >
+            <h2>TẠI MỘC MIÊN</h2>
+            <span>Quyền lợi thành viên</span>
+            <span>Thông tin thành viên</span>
+            <span>Theo dõi đơn hàng</span>
+            <span>Hướng dẫn mua hàng Online</span>
+            <div class="gap-2 d-flex">
+              <a href="" class="social-icon"
+                ><img src="../assets/images/insta.png" alt="insta"
+              /></a>
+              <a href="" class="social-icon"
+                ><img src="../assets/images/fb.png" alt="fb"
+              /></a>
+              <a href="" class="social-icon"
+                ><img src="../assets/images/linkedin.png" alt="linkedin"
+              /></a>
+              <a href="" class="social-icon"
+                ><img src="../assets/images/yt.png" alt="youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <h2 class="footer-slogant color-green">MỘC MIÊN - ĐẸP THUẦN NHIÊN!</h2>
+      </div>
+    </div>
   </body>
 
-  <script src="/scripts/index.js"></script>
+  <script src="../scripts/index.js"></script>
 
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

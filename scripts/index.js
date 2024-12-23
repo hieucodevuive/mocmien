@@ -353,11 +353,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Xử lý các bước đặt hàng
 document.addEventListener("DOMContentLoaded", () => {
-  let currentStep = 1; // Bước hiện tại
+  let currentStep = 1; // Bắt đầu từ bước đầu tiên
   const steps = document.querySelectorAll(".step");
   const stepContents = document.querySelectorAll(".step-content");
-  const nextButton = document.getElementById("next-step");
-  // const prevButton = document.getElementById("prev-step");
+  const nextButton = document.querySelectorAll("#next-step");
 
   function updateUI() {
     // Cập nhật trạng thái hiển thị cho các bước
@@ -365,21 +364,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const stepNumber = parseInt(step.getAttribute("data-step"));
       const icon = step.querySelector(".icon");
 
-      // Cập nhật trạng thái cho bước đã hoàn thành
+      // Bước đã hoàn thành
       if (stepNumber < currentStep) {
         step.classList.add("completed");
         step.classList.remove("active");
         icon.classList.add("text-white", "bg-blue-900");
         icon.classList.remove("bg-gray-200", "text-gray-500");
       }
-      // Cập nhật trạng thái cho bước hiện tại
+      // Bước hiện tại
       else if (stepNumber === currentStep) {
         step.classList.add("active");
         step.classList.remove("completed");
         icon.classList.add("text-white", "bg-blue-900");
         icon.classList.remove("bg-gray-200", "text-gray-500");
       }
-      // Cập nhật trạng thái cho bước chưa hoàn thành
+      // Bước chưa hoàn thành
       else {
         step.classList.remove("active", "completed");
         icon.classList.add("bg-gray-200", "text-gray-500");
@@ -390,31 +389,55 @@ document.addEventListener("DOMContentLoaded", () => {
     // Hiển thị nội dung tương ứng với bước hiện tại
     stepContents.forEach((content) => {
       const stepNumber = parseInt(content.getAttribute("data-step"));
-      content.classList.toggle("active", stepNumber === currentStep);
+      content.classList.toggle("hidden", stepNumber !== currentStep);
     });
-
-    // Ẩn/Hiện nút điều hướng
-    // prevButton.style.display = currentStep === 1 ? "none" : "inline-block";
-    // nextButton.textContent =
-    //   currentStep === steps.length ? "Hoàn tất" : "Tiếp tục";
   }
 
-  nextButton.addEventListener("click", () => {
-    if (currentStep < steps.length) {
-      currentStep++;
-      updateUI();
-    } else {
-      alert("Đặt hàng thành công!");
-    }
+  // Xử lý nút "Next Step"
+  nextButton.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (currentStep < steps.length) {
+        currentStep++;
+        updateUI();
+      } else {
+        alert("Đặt hàng thành công!");
+      }
+    });
   });
-
-  // prevButton.addEventListener("click", () => {
-  //   if (currentStep > 1) {
-  //     currentStep--;
-  //     updateUI();
-  //   }
-  // });
 
   // Cập nhật giao diện ban đầu
   updateUI();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nextStepButton = document.querySelector(".btn-submit-form");
+
+  nextStepButton.addEventListener("click", () => {
+    // Lấy giá trị từ các trường thông tin
+    const name = document.querySelector("#name").value;
+    const phone = document.querySelector("#phone").value;
+    const address = document.querySelector("#address").value;
+    const note = document.querySelector("#note").value;
+
+    // Lấy giá trị từ các radio button
+    const shipping = document
+      .querySelector('input[name="shipping"]:checked')
+      ?.nextElementSibling.textContent.trim();
+    const payment = document
+      .querySelector('input[name="payment"]:checked')
+      ?.nextElementSibling.textContent.trim();
+
+    // Tạo object chứa dữ liệu form
+    const formData = {
+      name,
+      phone,
+      address,
+      note,
+      shipping,
+      payment,
+    };
+
+    // Hiển thị thông tin trong console
+    console.log("Thông tin khách hàng:", formData);
+  });
 });

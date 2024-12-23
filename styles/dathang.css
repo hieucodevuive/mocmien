@@ -1,11 +1,3 @@
-.step-content {
-  display: none;
-}
-
-.step-content.active {
-  display: block;
-}
-
 .step .icon {
   transition: background-color 0.3s, color 0.3s;
 }
