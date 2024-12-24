@@ -220,34 +220,33 @@
         <div class="max-w-4xl">
           <div class="flex items-center space-x-4">
             <img
-              alt="Product image of Bột mướp đắng/ Khổ qua MỘC MIÊN Trị mụn, Giảm thâm mờ sẹo, Dịu làn da, Ngăn ngừa nấm, tàn nhang"
-              class="w-24 h-24 rounded-md"
-              height="100"
+              alt="Product image"
+              class="w-24 h-24 rounded-md product-image"
               src="https://storage.googleapis.com/a1aa/image/buPYYQvqWfwveUhuJnAnodNC0ErzATmrwUo8IdHVrfWZeo2PB.jpg"
-              width="100"
             />
-            <div class="flex-1">
-              <h2 class="text-lg font-semibold">
+            <div class="flex-1 product-info">
+              <h2 class="text-lg font-semibold product-name">
                 Bột mướp đắng/ Khổ qua MỘC MIÊN Trị mụn, Giảm thâm mờ sẹo, Dịu
                 làn da, Ngăn ngừa nấm, tàn nhang
               </h2>
-              <p class="text-gray-500">Số lượng: 1</p>
-              <button class="flex items-center mt-2 text-red-500">
-                <i class="mr-1 fas fa-trash-alt"> </i>
-                Xóa sản phẩm
+              <p class="text-gray-500 product-quantity-label">Số lượng:</p>
+              <button
+                class="flex items-center mt-2 text-red-500 delete-product"
+              >
+                <i class="mr-1 fas fa-trash-alt"></i> Xóa sản phẩm
               </button>
             </div>
-            <div class="text-right">
-              <p class="text-lg font-semibold">600.000đ</p>
-              <div class="flex items-center mt-2">
+            <div class="text-right product-price">
+              <p class="text-lg font-semibold unit-price">600.000đ</p>
+              <div class="flex items-center mt-2 quantity-control">
                 <button
-                  class="flex items-center justify-center w-8 h-8 border rounded-full"
+                  class="flex items-center justify-center w-8 h-8 border rounded-full btn-decrement"
                 >
                   -
                 </button>
-                <span class="mx-2"> 1 </span>
+                <span class="mx-2 quantity-display">1</span>
                 <button
-                  class="flex items-center justify-center w-8 h-8 border rounded-full"
+                  class="flex items-center justify-center w-8 h-8 border rounded-full btn-increment"
                 >
                   +
                 </button>
@@ -256,19 +255,22 @@
           </div>
           <hr class="my-4" />
           <div class="flex items-center justify-between">
-            <p class="text-lg font-semibold">Tổng tiền</p>
-            <p class="text-lg font-semibold text-green-600">600.000đ</p>
+            <p class="text-lg font-semibold total-label">Tổng tiền</p>
+            <p class="text-lg font-semibold text-green-600 total-price">
+              600.000đ
+            </p>
           </div>
           <div class="flex justify-center mt-4">
             <button
               id="next-step"
-              class="px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              class="px-4 py-2 text-white bg-green-500 rounded-full btn-submit hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
             >
               ĐẶT HÀNG NGAY
             </button>
           </div>
         </div>
       </div>
+
       <div class="hidden step-content" data-step="2">
         <div class="grid max-w-4xl sm:grid-cols-2 gap-x-8 gap-y-4">
           <h2 class="text-xl font-semibold sm:col-span-2">
