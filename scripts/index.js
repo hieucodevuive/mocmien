@@ -285,8 +285,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fake API responses with an array of content
   const apiResponses = {
     info: `
-      <p><strong>Thông tin sản phẩm:</strong> Đây là sản phẩm mới với các tính năng vượt trội...</p>
-      <img src="../assets/images/trisacto.png" alt="Product Image 1" class="mt-2 w-full h-[400px] object-cover rounded-lg">
+      <p class="mt-5"><strong>Thông tin sản phẩm:</strong> Đây là sản phẩm mới với các tính năng vượt trội...</p>
+      <img src="../assets/images/slide11.png" alt="Product Image 1" class="mt-5 mb-5 w-full h-[400px] object-cover rounded-[24px]">
       <p>Được thiết kế với công nghệ tiên tiến, mang lại hiệu suất vượt trội.</p>
       <p>Chất liệu cao cấp, bền bỉ và thân thiện với người dùng.</p>
     `,
@@ -294,13 +294,13 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Kích thước:</strong> 30x40x10 cm</p>
       <p><strong>Trọng lượng:</strong> 1kg</p>
       <p><strong>Chất liệu:</strong> Nhựa cao cấp</p>
-      <img src="/assets/images/specs1.jpg" alt="Specs Image" class="mt-2 w-full h-auto rounded-lg">
+      <img src="../assets/images/slide11.png" alt="Product Image 1" class="mt-5 mb-5 w-full h-[400px] object-cover rounded-[24px]">
     `,
     reviews: `
-      <p><strong>Đánh giá:</strong> Sản phẩm được đánh giá 4.5/5.</p>
+      <p class="mt-5"><strong>Đánh giá:</strong> Sản phẩm được đánh giá 4.5/5.</p>
       <p>Rất hài lòng về chất lượng, độ bền và thiết kế.</p>
-      <img src="/assets/images/review1.jpg" alt="Review Image" class="mt-2 w-full h-auto rounded-lg">
-      <p>Khách hàng phản hồi tích cực về hiệu suất sản phẩm.</p>
+      <img src="../assets/images/slide11.png" alt="Product Image 1" class="mt-5 mb-5 w-full h-[400px] object-cover rounded-[24px]">
+      <p class="mt-5">Khách hàng phản hồi tích cực về hiệu suất sản phẩm.</p>
     `,
   };
 
